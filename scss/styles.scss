@@ -1,15 +1,4 @@
-/*!
-    Title: Dev Portfolio Template
-    Version: 1.2.2
-    Last Change: 03/25/2020
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
 
-    Description: This file contains all the styles associated with the page
-    that don't come from third party libraries. This file gets compiled using
-    Gulp and send to the /css folder which is then loaded on the page.
-*/
 /*
     File Contents:
 
@@ -92,6 +81,7 @@ body {
         overflow: hidden;
         z-index: -1;
     }
+    
 }
 
 // No JS styles
@@ -336,7 +326,7 @@ footer {
 }
 
 .background-alt {
-    background: $background-alt;
+    background: linear-gradient(180deg, #f7f9fc, #f2f2f5);
 }
 
 /*
@@ -448,6 +438,7 @@ footer {
 #about {
     padding: 75px 15px;
     border-bottom: 1px solid $border;
+    
 
     h2 {
         color: $heading;
@@ -473,6 +464,7 @@ footer {
     h2 {
         color: $heading;
     }
+    background: url("../images/experience-bg.jpg") center/cover no-repeat;
 }
 
 #experience-timeline {
@@ -585,6 +577,8 @@ footer {
         color: $heading;
         margin-bottom: 50px;
     }
+
+      background: url("../images/education-bg.jpg") center/cover no-repeat;
 }
 
 .education-block {
@@ -642,6 +636,10 @@ footer {
 }
 
 .project {
+    transition: 0.3s ease;
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);}
     position: relative;
     max-width: 900px;
     margin: 0 auto 30px auto;
@@ -649,6 +647,7 @@ footer {
     background: #fff;
     border-radius: 4px;
 }
+
 
 .project-image {
     float: left;
@@ -700,25 +699,30 @@ footer {
 
     h2 {
         color: $heading;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     ul {
-        display: block;
         margin: 0 auto;
         padding: 0;
-        max-width: 800px;
+        max-width: 900px;
+        text-align: left; // important for readability
     }
 
     li {
-        display: inline-block;
-        margin: 7px;
-        padding: 5px 10px;
+        list-style: none;
+        margin-bottom: 12px;
+        padding: 12px 15px;
         color: $heading;
         background: darken($background-alt, 5%);
-        list-style: none;
-        cursor: default;
-        font-size: 1.2em;
+        border-radius: 8px;
+        font-size: 1.05em;
+        line-height: 1.6;
+    }
+
+    li strong {
+        display: inline-block;
+        margin-right: 5px;
     }
 }
 
@@ -999,3 +1003,56 @@ footer {
     }
 
 }
+
+.education-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.education-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.education-info {
+    flex: 1;
+}
+
+.education-info h3 {
+    margin: 0;
+}
+
+.education-info h4 {
+    margin: 5px 0 0 0;
+    color: $text;
+    font-weight: 400;
+}
+
+.education-date {
+    white-space: nowrap;
+    color: $text;
+    font-size: 0.9em;
+}
+
+.education-block {
+    transition: 0.3s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+}
+
+.education-block {
+    transition: 0.3s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+}
+
