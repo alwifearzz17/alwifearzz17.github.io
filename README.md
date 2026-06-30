@@ -69,9 +69,9 @@ HeiTech Padu Berhad (2022 – 2023)
 
 ## 📫 Contact Me
 
-- 📧 Email: your-email@example.com  
-- 💼 LinkedIn: https://linkedin.com/in/your-profile  
-- 💻 GitHub: https://github.com/your-username  
+- 📧 Email: muhdalwi3011@gmail.com 
+- 💼 LinkedIn:https://www.linkedin.com/in/muhammad-alwi-754872241/
+- 💻 GitHub: https://github.com/alwifearzz17
 
 ---
 
