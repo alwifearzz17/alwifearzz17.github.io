@@ -1,16 +1,79 @@
-### Annyeonghaseyo 👋
+# 👋 Hi, I'm Muhammad Alwi
 
-<!--
-**alwifearzz17/alwifearzz17** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 💻 Software Developer
 
-Here are some ideas to get you started:
+Software Developer with experience in full-stack development, enterprise systems, and AI-based solutions.  
+I enjoy building scalable applications and learning new technologies.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## 🧑‍💻 About Me
+
+- 🔭 Currently working as Software Developer
+- 💡 Interested in AI, backend systems, and full-stack development
+- 🌱 Constantly learning modern web technologies
+- ⚙️ Passionate about building efficient and scalable systems
+- 📍 Based in Malaysia
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- Angular
+- HTML, CSS, JavaScript
+- Bootstrap
+
+### Backend
+- ASP.NET Core (C#)
+- Java Spring Boot
+- Python (basic AI/automation)
+
+### Database
+- SQL Server
+- Neo4j Graph Database
+
+### Tools & DevOps
+- Git / GitHub
+- Docker (basic)
+- Linux / Ubuntu Server
+- Apache / Nginx (basic deployment)
+
+---
+
+## 🚀 Projects
+
+### 🔹 AI Document Processing System
+Automated data extraction from uploaded documents using AI integration with Angular + .NET backend.
+
+### 🔹 Fraud Detection System
+Graph-based fraud detection using Neo4j to analyze relationships and suspicious patterns.
+
+### 🔹 ERP System Development
+Developed enterprise modules including audit trail, e-invoicing, reporting, and business validation.
+
+### 🔹 AI Chatbot
+Built a chatbot system for insurance workflows using Python and backend integration.
+
+---
+
+## 📈 Experience
+
+**Software Developer**  
+ABOD Technology Services (2023 – Present)
+
+**Software Developer Intern**  
+HeiTech Padu Berhad (2022 – 2023)
+
+---
+
+## 📫 Contact Me
+
+- 📧 Email: your-email@example.com  
+- 💼 LinkedIn: https://linkedin.com/in/your-profile  
+- 💻 GitHub: https://github.com/your-username  
+
+---
+
+## ⚡ Fun Fact
+I enjoy turning complex systems into simple, user-friendly solutions.
