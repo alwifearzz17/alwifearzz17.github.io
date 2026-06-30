@@ -375,6 +375,26 @@ footer {
     }
 }
 
+.lead-inner {
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+  gap: 20px; 
+   align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 #lead-overlay {
     position: absolute;
     height: 100%;
@@ -383,7 +403,10 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-hover, 0.8);
+      background: linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.7)
+  );
     z-index: 1;
 }
 
@@ -583,6 +606,7 @@ footer {
 
 .education-block {
     max-width: 700px;
+    background: #fff;
     margin: 0 auto 30px auto;
     padding: 15px;
     border: 1px solid $border;
@@ -633,7 +657,10 @@ footer {
         color: $heading;
         margin-bottom: 50px;
     }
+
+     background: url("../images/project-bg.jpg") center/cover no-repeat;
 }
+
 
 .project {
     transition: 0.3s ease;
@@ -884,7 +911,7 @@ footer {
         padding: 100px 15px;
     }
 
-    #lead-content {
+    #lead-content { 
         position: relative;
         transform: none;
         left: auto;
@@ -1047,12 +1074,64 @@ footer {
     }
 }
 
-.education-block {
-    transition: 0.3s ease;
-
-    &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    }
+#experience .heading {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 12px 30px;
+    border-radius: 12px;
+    color: #374054;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    margin-bottom: 40px;
 }
 
+#experience .heading:after {
+    
+        position: absolute;
+        content: '';
+        top: 85%;
+        height: 1px;
+        width: 50px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background: $base-color;
+    
+}
+
+
+#projects .heading {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 12px 30px;
+    border-radius: 12px;
+    color: #374054;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    margin-bottom: 40px;
+}
+
+#projects .heading:after {
+    
+        position: absolute;
+        content: '';
+        top: 85%;
+        height: 1px;
+        width: 50px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background: $base-color;
+    
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%; /* makes it circular */
+  margin-bottom: 20px;
+  border: 3px solid white; /* optional nice border */
+}

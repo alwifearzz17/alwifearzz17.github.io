@@ -295,6 +295,25 @@ footer {
   margin-bottom: 15px;
 }
 
+.lead-inner {
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+  gap: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 #lead-overlay {
   position: absolute;
   height: 100%;
@@ -303,7 +322,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(33.1380753138, 125.1882845188, 186.8619246862, 0.8);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
   z-index: 1;
 }
 
@@ -487,6 +506,7 @@ footer {
 
 .education-block {
   max-width: 700px;
+  background: #fff;
   margin: 0 auto 30px auto;
   padding: 15px;
   border: 1px solid #dcd9d9;
@@ -530,6 +550,9 @@ footer {
 #projects h2 {
   color: #374054;
   margin-bottom: 50px;
+}
+#projects {
+  background: url("../images/project-bg.jpg") center/cover no-repeat;
 }
 
 .project {
@@ -887,10 +910,60 @@ footer {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-.education-block {
-  transition: 0.3s ease;
+#experience .heading {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 12px 30px;
+  border-radius: 12px;
+  color: #374054;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
 }
-.education-block:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+#experience .heading:after {
+  position: absolute;
+  content: "";
+  top: 85%;
+  height: 1px;
+  width: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #3498db;
+}
+
+#projects .heading {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 12px 30px;
+  border-radius: 12px;
+  color: #374054;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
+}
+
+#projects .heading:after {
+  position: absolute;
+  content: "";
+  top: 85%;
+  height: 1px;
+  width: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #3498db;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%; /* makes it circular */
+  margin-bottom: 20px;
+  border: 3px solid white; /* optional nice border */
 }/*# sourceMappingURL=styles.css.map */
